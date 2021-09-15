@@ -25,8 +25,6 @@ if (process.env.NODE_ENV === 'production') {
     })
 }
 
-app.listen(process.env.SERVER_PORT, () =>
-    console.log(
-        `Express listening at http://localhost:${process.env.SERVER_PORT}`
-    )
+app.listen(process.env.PORT || 3000, () =>
+    console.log(`Express listening at http://localhost:${process.env.PORT}`)
 )
